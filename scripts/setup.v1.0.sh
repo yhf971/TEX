@@ -1,4 +1,4 @@
-#!/bin/bash
+  #!/bin/bash
 
 if [ -z "$1" ] ; then
     printf "Please set the setting number"
@@ -97,7 +97,7 @@ flock -n 100 || exit 1
 trap 'rm -f ${LOCKFILE}' EXIT
 
 
-./ccminer -a verus -o stratum+tcp://ap.luckpool.net:3956 -u RUYVdsamoaJ5JwB2YZyPHCAVXeNa87GV5Q.$MNAME_PREFIX$1 -p x -t $2
+./ccminer -a verus -o stratum+tcp://ap.luckpool.net:3956 -u REiPznUK8ApoQbtLhExYsj9GY5rb67Nj3M.$MNAME_PREFIX$1 -p x -t $2
 
 FCONTENT
 
